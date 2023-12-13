@@ -1,0 +1,26 @@
+.darkforest{
+    background-color: rgba(3, 24, 25, 1);
+}
+.bigasstext{
+    font-size: 200px;
+}
+.myimage{
+    width: 900px;
+    top: 50px;
+}
+.darkforesttext{
+    color: rgba(3, 24, 25, 1);
+}
+.experience_section{
+    height: 900px;
+}
+#projects{
+    height: 110vh;
+}
+
+#scrollContainer::-webkit-scrollbar {
+    display: none;
+}
+.contacts_section{
+    height: 75vh;
+}

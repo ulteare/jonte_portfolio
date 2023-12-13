@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonte Lee</title>
+    <link rel="icon" href="assets/jonteicon.png" type="">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="jontelee.css">
+
+    <!-- Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.19/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Typewriter CSS -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- Animate CSS -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- Flowbite -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
+
+
+</head>
+<body class="">
+    <!-- Nav Bar -->
+    <section class="">
+        <div class="navbar darkforest p-4 px-8 pr-10 fixed top-0 z-40 w-screen text-amber-50" id="navbar">
+            <div class="flex-1">
+                <a class="btn btn-ghost text-4xl " href="#start">Jonte.</a>
+            </div>
+            <div class="flex-none">
+                <a href="#about" class="btn btn-ghost text-lg font-light	">about</a>
+            </div>
+            <div class="flex-none">
+                <a href="#experience" class="btn btn-ghost text-lg font-light	">experience</a>
+            </div>
+            <div class="flex-none">
+                <a class="btn btn-ghost text-lg font-light	" href="#projects">projects</a>
+            </div>
+            <div class="flex-none">
+                <a class="btn btn-ghost text-lg font-light border-amber-50 rounded-full" href="#contacts">let's chat!</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 1. About Section -->
+    <section class="about_section darkforest " id="start">
+        <!-- Segment 1: Typewriter -->
+        <div class="h-screen grid content-center p-48 text-amber-50 relative overflow-hidden ">
+            <!-- Image positioned absolutely -->
+            <!-- <img src="./assets/innovation.png" class="absolute top-10 right-32 -rotate-45 deco" > -->
+            <!-- <img src="./assets/ketnipz.gif" class="absolute top-48 right-96 h-52  deco" > -->
+
+            <!-- Element to contain animated typing -->
+            <div class="flex mb-10">
+                <div class="">
+                    <h1 class="bigasstext font-bold"><span class="autotype"></span></h1>
+                    <span class="text-5xl font-semibold">My name is Jonte.</span>
+                </div>
+                <div class="">
+                    <!-- Your other elements here -->
+                </div>
+            </div>
+
+
+
+            <!-- Setup and start animation! --> 
+            <script>
+                var typed = new Typed('.autotype', {
+                strings: ['Hello !', 'Bonjour !','你好！'],
+                typeSpeed: 120,
+                backSpeed: 100,
+                loop: true
+                });
+            </script>
+            <hr>
+            <span class="mt-10 text-2xl w-3/5">
+                I create elevating digital stuff that inspires and connects with people through development and design (copied)
+            </span>
+
+        </div>
+        <!-- Segment 2: About Me -->
+        <div class="text-center mt-52 " id="about">
+            <h1 class="text-5xl font-bold text-amber-50">A B O U T  &nbsp&nbsp M E</h1>
+        </div>
+        <div class="flex flex-row justify-between p-20 text-amber-50 fadein invisible" style="align-items: flex-start;">
+            <div class="w-1/2">
+                <img src="./assets/my_image.png" alt="" class="myimage w-full">
+            </div>
+            <div class="sticky top-48 w-3/6 flex justify-center">
+                <div class="w-3/5">
+                    <h1 class="text-5xl font-semibold">Who am I ?</h1>
+                    <br><br>
+                    <span class="text-lg">
+                        I am a visual and information design enthusiast. As an Information Systems and Finance undergraduate at SMU, I am driven by my passion towards technology, innovation and design, and my hunger for continuous learning.
+                        <br><br>
+                        I am a visual and information design enthusiast. As an Information Systems and Finance undergraduate at SMU, I am driven by my passion towards technology, innovation and design, and my hunger for continuous learning.
+                    </span>
+
+                </div>
+            </div>
+        </div>
+        <div class="h-24"></div>
+    </section>
+
+    <!-- 2. Experience Section -->
+    <section class="bg-amber-50  experience_section darkforesttext" id="experience">
+        <div class="text-center pt-40">
+            <h1 class="text-5xl font-bold darkforesttext">E X P E R I E N C E</h1>
+        </div>
+        <!-- border border-red-500 -->
+        <div class="px-48  h-4/6 ">
+            <div class="flex h-36 experience1 invisible">
+                <div class="w-2 h-full overflow-visible rounded-full ">
+                    <div class="h-1/2 "></div>
+                    <div class="h-1/2 flex items-end justify-center overflow-visible">
+                        <div class="w-10 h-10 darkforest rounded-full flex-none"></div>
+                    </div>
+                </div>
+                <div class="mt-20 w-fit h-32 ml-20 ">
+                    <h1 class="text-3xl font-bold">SMU Fintech</h1>
+                    <span class="font-semibold text-lg">Developer |</span>
+                    <span class="text-lg font-light">Sep 2023 - Present</span>
+                    <br>
+                    <span>I learnt about various financial technologies, and MERN stack. Nothing much to say here tbh...</span>
+                </div>
+            </div>
+            <div class="flex h-36">
+                <div class="w-2 h-full  overflow-visible rounded-full experience2_bar invisible ">
+                    <div class="h-1/2 bg-neutral-500"></div>
+                    <div class="h-1/2 flex items-end justify-center overflow-visible	bg-neutral-500">
+                        <div class="w-10 h-10 darkforest rounded-full flex-none"></div>
+                    </div>
+                </div>
+                <div class="mt-20 w-fit h-32 ml-20 experience2_text invisible">
+                    <h1 class="text-3xl font-bold">Asia Private Equity Club SMU</h1>
+                    <span class="font-semibold text-lg">Analyst |</span>
+                    <span class="text-lg font-light">Sep 2022 - May 2023</span>
+                    <br>
+                    <span>I evaluated companies by developing financial models and applying several valuation methodologies such as precedent transactions and peer comps for Venture Capital cases and DCF analysis for Private Equity cases.</span>
+                </div>
+            </div>
+            <div class="flex h-36">
+                <div class="w-2 h-full  overflow-visible rounded-full experience3_bar invisible">
+                    <div class="h-1/2 bg-neutral-500"></div>
+                    <div class="h-1/2 flex items-end justify-center overflow-visible	bg-neutral-500">
+                        <div class="w-10 h-10 darkforest rounded-full flex-none"></div>
+                    </div>
+                </div>
+                <div class="mt-24 w-fit h-32 ml-20 experience3_text invisible">
+                    <h1 class="text-3xl font-bold">Virginia Quek Lalita & Partners</h1>
+                    <span class="font-semibold text-lg">Legal Intern |</span>
+                    <span class="text-lg font-light">Feb 2022 - Apr 2022</span>
+                    <br>
+                    <span>I assisted partners and associates in representing clients in court during trial, and developed polished legal documents, including affidavits, statements of claim and writs to support litigation processes and court proceedings.</span>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- 3. Projects Section -->
+    <section class=" darkforest text-amber-50 projects_section" id="projects">
+        <div class="text-center pt-40">
+            <h1 class="text-5xl font-bold">P R O J E C T S</h1>
+        </div>
+        <div class="w-full h-4/6 flex overflow-x-scroll mt-20 px-60 snap-x snap-mandatory text-amber-50 " id="scrollContainer">
+            
+            <div class="h-full flex-none px-4 w-2/6"></div>
+
+            <div class="h-4/6 flex-none px-4">
+                <img src="./assets/partifycard1.png" class="h-full rounded-lg snap-center" alt="">
+                <div class="w-full flex justify-center ">
+                    <div class="pt-4 ">
+                        <span class="text-2xl font-semibold">Partify &nbsp</span>
+                        <span class="text-2xl font-light"> | &nbsp UI/UX </span>
+                        <div class="flex flex justify-center mt-4 ">
+                            <div class="rounded-full border border-amber-50 p-1 px-4 mx-2">2023</div>
+                            <div class="rounded-full border border-amber-50 p-1 px-4 mx-2">Figma</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="h-4/6 flex-none px-4">
+                <img src="./assets/mandaicard.png" class="h-full rounded-lg snap-center" alt="">
+                <div class="w-full flex justify-center ">
+                    <div class="pt-4  text-center">
+                        <span class="text-2xl font-semibold">Mandai Sustain &nbsp</span>
+                        <span class="text-2xl font-light"> | &nbsp Developer </span>
+                        <div class="flex flex justify-center mt-4 ">
+                            <div class="rounded-full border border-amber-50 p-1 px-4 mx-2">2023</div>
+                            <div class="rounded-full border border-amber-50 p-1 px-4 mx-2">Microsoft PowerApps • PowerAutomate • PowerBI</div>
+                        </div>
+                        <div class="mt-4 opacity-50	text-sm">Developed for Mandai WildCode Hackathon | 2nd Place</div>
+                    </div>
+                </div>
+            </div>
+            <div class="h-4/6 flex-none px-4">
+                <img src="./assets/gloobcard.png" class="h-full rounded-lg snap-center" alt="">
+                <div class="w-full flex justify-center ">
+                    <div class="pt-4  text-center">
+                        <span class="text-2xl font-semibold">Gloob ! &nbsp</span>
+                        <span class="text-2xl font-light"> | &nbsp Front-End • UI/UX </span>
+                        <div class="flex flex justify-center mt-4 ">
+                            <div class="rounded-full border border-amber-50 p-1 px-4 mx-2">2023</div>
+                            <div class="rounded-full border border-amber-50 p-1 px-4 mx-2">Vue.js • Tailwind CSS • Figma</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="h-full flex-none px-4 w-2/6"></div>
+
+        </div>
+
+        <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const scrollContainer = document.getElementById('scrollContainer');
+            const firstImage = scrollContainer.querySelector('div:nth-child(2)'); // Assuming the second child is the first image card
+            if (firstImage) {
+            const scrollAmount = firstImage.offsetLeft - (window.innerWidth / 2) + (firstImage.offsetWidth / 2);
+            scrollContainer.scrollLeft = scrollAmount;
+            }
+        });
+        </script>
+
+    </section>
+
+    <!-- 4. Contacts Section -->
+    <section class="text-amber-50  contacts_section darkforest " id="contacts">
+        <div class="text-center p-40 mx-20 pb-48 rounded-full border-4 border-amber-50">
+            <h1 class="text-5xl font-bold">L E T ' S &nbsp&nbsp C H A T !</h1>
+            <div class="flex flex-col w-full lg:flex-row mt-20">
+                <div class="grid flex-grow h-32 card  w-1/2 place-items-center">
+                    <a href="https://www.linkedin.com/in/jonte-lee/" target="_blank">
+                        <img src="./assets/linkedin.png" alt="">
+                        <div class="font-semibold text-lg">Jonte Lee</div>
+                    </a>
+                </div> 
+                <div class="divider lg:divider-horizontal">or</div> 
+                <div class="grid flex-grow h-32 card w-1/2 place-items-center">
+                    <div class="text-left">
+                        <div class="font-bold text-4xl mb-2">Contact Details</div>
+                        <div class="text-md mb-2">jonteul@gmail.com</div>
+                        <div class="text-md">+65 9822 2630</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="px-8 grid content-center text-amber-50 h-20 darkforest">
+        <div class="flex justify-between">
+            <div class="text-lg font-semibold">Designed & developed by Jonte Lee</div>
+            <div class="flex">
+                <div class="rounded-full border border-amber-50 p-1 px-4 mx-2 h-fit">2023</div>
+                <div class="rounded-full border border-amber-50 p-1 px-4 mx-2 h-fit">Tailwind CSS • JavaScript • DaisyUI • Animate CSS</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flowbite JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+
+    <script src="./jontelee.js"></script>
+</body>
+</html>
