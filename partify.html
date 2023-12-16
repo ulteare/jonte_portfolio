@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonte Lee</title>
+    <link rel="icon" href="assets/jonteicon.png" type="">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="jontelee.css">
+
+    <!-- Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.19/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Typewriter CSS -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- Animate CSS -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- Flowbite -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
+
+
+</head>
+<body class="">
+    <!-- Nav Bar -->
+    <section class="">
+        <div class="navbar darkforest p-4 px-8 pr-10 fixed top-0 z-40 w-screen text-amber-50" id="navbar">
+            <div class="flex-1">
+                <a class="btn btn-ghost text-4xl " href="./index.html">Jonte.</a>
+            </div>
+            <div class="flex-none">
+                <a href="./index.html/#about" class="btn btn-ghost text-lg font-light	">about</a>
+            </div>
+            <div class="flex-none">
+                <a href="#experience" class="btn btn-ghost text-lg font-light	">experience</a>
+            </div>
+            <div class="flex-none">
+                <a class="btn btn-ghost text-lg font-light	" href="#projects">projects</a>
+            </div>
+            <div class="flex-none">
+                <a class="btn btn-ghost text-lg font-light border-amber-50 rounded-full" href="#contacts">let's chat!</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 3. Projects Section -->
+    <section class=" darkforest text-amber-50 projects_section" id="projects">
+        <div class="text-center pt-40">
+            <h1 class="text-5xl font-bold">P R O J E C T S</h1>
+        </div>
+        <div class="w-full h-4/6 flex overflow-x-scroll mt-20 px-60 snap-x snap-mandatory text-amber-50 " id="scrollContainer">
+            
+            <div class="h-full flex-none px-4 w-2/6"></div>
+
+            <div class="h-4/6 flex-none px-4">
+                <img src="./assets/partifycard1.png" class="h-full rounded-lg snap-center" alt="">
+                <div class="w-full flex justify-center ">
+                    <div class="pt-4 ">
+                        <span class="text-2xl font-semibold">Partify &nbsp</span>
+                        <span class="text-2xl font-light"> | &nbsp UI/UX </span>
+                        <div class="flex flex justify-center mt-4 ">
+                            <div class="rounded-full border border-amber-50 p-1 px-4 mx-2">2023</div>
+                            <div class="rounded-full border border-amber-50 p-1 px-4 mx-2">Figma</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="h-4/6 flex-none px-4">
+                <img src="./assets/mandaicard.png" class="h-full rounded-lg snap-center" alt="">
+                <div class="w-full flex justify-center ">
+                    <div class="pt-4  text-center">
+                        <span class="text-2xl font-semibold">Mandai Sustain &nbsp</span>
+                        <span class="text-2xl font-light"> | &nbsp Developer </span>
+                        <div class="flex flex justify-center mt-4 ">
+                            <div class="rounded-full border border-amber-50 p-1 px-4 mx-2">2023</div>
+                            <div class="rounded-full border border-amber-50 p-1 px-4 mx-2">Microsoft PowerApps • PowerAutomate • PowerBI</div>
+                        </div>
+                        <div class="mt-4 opacity-50	text-sm">Developed for Mandai WildCode Hackathon | 2nd Place</div>
+                    </div>
+                </div>
+            </div>
+            <div class="h-4/6 flex-none px-4">
+                <img src="./assets/gloobcard.png" class="h-full rounded-lg snap-center" alt="">
+                <div class="w-full flex justify-center ">
+                    <div class="pt-4  text-center">
+                        <span class="text-2xl font-semibold">Gloob ! &nbsp</span>
+                        <span class="text-2xl font-light"> | &nbsp Front-End • UI/UX </span>
+                        <div class="flex flex justify-center mt-4 ">
+                            <div class="rounded-full border border-amber-50 p-1 px-4 mx-2">2023</div>
+                            <div class="rounded-full border border-amber-50 p-1 px-4 mx-2">Vue.js • Tailwind CSS • Figma</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="h-full flex-none px-4 w-2/6"></div>
+
+        </div>
+
+        <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const scrollContainer = document.getElementById('scrollContainer');
+            const firstImage = scrollContainer.querySelector('div:nth-child(2)'); // Assuming the second child is the first image card
+            if (firstImage) {
+            const scrollAmount = firstImage.offsetLeft - (window.innerWidth / 2) + (firstImage.offsetWidth / 2);
+            scrollContainer.scrollLeft = scrollAmount;
+            }
+        });
+        </script>
+
+    </section>
+
+    <div class="darkforest h-96"></div>
+
+    <section class="px-8 grid content-center text-amber-50 h-20 darkforest">
+        <div class="flex justify-between">
+            <div class="text-lg font-semibold">Designed & developed by Jonte Lee</div>
+            <div class="flex">
+                <div class="rounded-full border border-amber-50 p-1 px-4 mx-2 h-fit">2023</div>
+                <div class="rounded-full border border-amber-50 p-1 px-4 mx-2 h-fit">Tailwind CSS • JavaScript • DaisyUI • Animate CSS</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flowbite JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+
+    <script src="./jontelee.js"></script>
+</body>
+</html>
