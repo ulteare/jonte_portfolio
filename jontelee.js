@@ -21,52 +21,52 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 // change color when entering projects section
-document.addEventListener("DOMContentLoaded", function() {
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            const navbar = document.getElementById("navbar");
-            if (entry.isIntersecting) {
-                // When entering the element
-                navbar.classList.add('darkforest', 'text-amber-50');
-                navbar.classList.remove('bg-amber-50', 'darkforesttext');
-            } else {
-                // When leaving the element
-                // need to edit this so that the leaving threshold is differet. rn, when it goes past 0.88
-                // it will disappear again.
-                navbar.classList.remove('darkforest', 'text-amber-50');
-                navbar.classList.add('bg-amber-50', 'darkforesttext');
-            }
-        });
-    }, { threshold: 0.86 });
+// document.addEventListener("DOMContentLoaded", function() {
+//     const observer = new IntersectionObserver((entries, observer) => {
+//         entries.forEach(entry => {
+//             const navbar = document.getElementById("navbar");
+//             if (entry.isIntersecting) {
+//                 // When entering the element
+//                 navbar.classList.add('darkforest', 'text-amber-50');
+//                 navbar.classList.remove('bg-amber-50', 'darkforesttext');
+//             } else {
+//                 // When leaving the element
+//                 // need to edit this so that the leaving threshold is differet. rn, when it goes past 0.88
+//                 // it will disappear again.
+//                 navbar.classList.remove('darkforest', 'text-amber-50');
+//                 navbar.classList.add('bg-amber-50', 'darkforesttext');
+//             }
+//         });
+//     }, { threshold: 0.86 });
 
-    const img = document.querySelector('.projects_section');
-    observer.observe(img);
-});
+//     const img = document.querySelector('.projects_section');
+//     observer.observe(img);
+// });
 // need to change so that each section produces its own color
 
 //about section return color
-document.addEventListener("DOMContentLoaded", function() {
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            const navbar = document.getElementById("navbar");
-            if (entry.isIntersecting && entry.boundingClientRect.top <= window.innerHeight / 4) {
-                // When the top of the section reaches the top quarter of the viewport
-                navbar.classList.add('darkforest', 'text-amber-50');
-                navbar.classList.remove('bg-amber-50', 'darkforesttext');
-            } else {
-                // When the top of the section is not at the top quarter of the viewport
-                navbar.classList.remove('darkforest', 'text-amber-50');
-                navbar.classList.add('bg-amber-50', 'darkforesttext');
-            }
-        });
-    }, {
-        threshold: 0.01, // Set a low threshold to ensure the callback runs for small intersections
-        rootMargin: "-11.5% 0px 0px 0px" // Top quarter of the screen
-    });
+// document.addEventListener("DOMContentLoaded", function() {
+//     const observer = new IntersectionObserver((entries, observer) => {
+//         entries.forEach(entry => {
+//             const navbar = document.getElementById("navbar");
+//             if (entry.isIntersecting && entry.boundingClientRect.top <= window.innerHeight / 4) {
+//                 // When the top of the section reaches the top quarter of the viewport
+//                 navbar.classList.add('darkforest', 'text-amber-50');
+//                 navbar.classList.remove('bg-amber-50', 'darkforesttext');
+//             } else {
+//                 // When the top of the section is not at the top quarter of the viewport
+//                 navbar.classList.remove('darkforest', 'text-amber-50');
+//                 navbar.classList.add('bg-amber-50', 'darkforesttext');
+//             }
+//         });
+//     }, {
+//         threshold: 0.01, // Set a low threshold to ensure the callback runs for small intersections
+//         rootMargin: "-11.5% 0px 0px 0px" // Top quarter of the screen
+//     });
 
-    const section = document.querySelector('.about_section');
-    observer.observe(section);
-});
+//     const section = document.querySelector('.about_section');
+//     observer.observe(section);
+// });
 
 
 
