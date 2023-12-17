@@ -1,5 +1,8 @@
 // about me section fadein
 document.addEventListener("DOMContentLoaded", function() {
+    // Determine the threshold based on the viewport width
+    const threshold = window.innerWidth > 400 ? 0.3 : 0.08;
+
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -8,15 +11,16 @@ document.addEventListener("DOMContentLoaded", function() {
                 entry.target.classList.add('animate__animated', 'animate__fadeIn');
             } else {
                 // When leaving the viewport
-                entry.target.classList.add( 'animate__fadeOut');
+                entry.target.classList.add('animate__fadeOut');
                 entry.target.classList.remove('animate__fadeIn');
             }
         });
-    }, { threshold: 0.3 });
+    }, { threshold: threshold });
 
     const img = document.querySelector('.fadein');
     observer.observe(img);
 });
+
 
 
 
