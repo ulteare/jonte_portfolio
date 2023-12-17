@@ -1,9 +1,27 @@
 .darkforest{
     background-color: rgba(3, 24, 25, 1);
 }
-.bigasstext{
-    font-size: 200px;
+
+/* start: font-size for big ass text */
+.bigasstext {
+    font-size: 70px;
 }
+
+/* Style for width between 1200px and 1280px */
+@media screen and (min-width: 1200px) and (max-width: 1279px) {
+    .bigasstext {
+        font-size: 150px;
+    }
+}
+
+/* Style for width above 1280px */
+@media screen and (min-width: 1280px) {
+    .bigasstext {
+        font-size: 200px;
+    }
+}
+/* end. */
+
 .myimage{
     width: 900px;
     top: 50px;
