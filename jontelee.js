@@ -221,7 +221,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function updateTextBasedOnWidth() {
-    var text = window.innerWidth <= 400 ? 
+    var text = window.innerWidth <= 450 ? 
                "Microsoft PowerPlatforms" : 
                "Microsoft PowerApps • PowerAutomate • PowerBI";
 
