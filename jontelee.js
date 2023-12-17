@@ -219,3 +219,17 @@ document.addEventListener("DOMContentLoaded", function() {
     const img = document.querySelector('.contacts_section');
     observer.observe(img);
 });
+
+function updateTextBasedOnWidth() {
+    var text = window.innerWidth <= 400 ? 
+               "Microsoft PowerPlatforms" : 
+               "Microsoft PowerApps • PowerAutomate • PowerBI";
+
+    document.getElementById("toolong").innerText = text;
+}
+
+// Update the text when the page is first loaded
+document.addEventListener("DOMContentLoaded", updateTextBasedOnWidth);
+
+// Update the text when the window is resized
+window.addEventListener("resize", updateTextBasedOnWidth);
