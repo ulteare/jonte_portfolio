@@ -51,7 +51,7 @@
     width: 824px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     .partify_desc {
         width: 300px;
     }
