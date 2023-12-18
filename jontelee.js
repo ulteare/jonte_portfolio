@@ -233,3 +233,27 @@ document.addEventListener("DOMContentLoaded", updateTextBasedOnWidth);
 
 // Update the text when the window is resized
 window.addEventListener("resize", updateTextBasedOnWidth);
+
+
+// contacts section fadein
+document.addEventListener("DOMContentLoaded", function() {
+    // Determine the threshold based on the viewport width
+    const threshold = window.innerWidth > 400 ? 0.5 : 0.08;
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // When entering the viewport
+                entry.target.classList.remove('invisible', 'animate__fadeOut');
+                entry.target.classList.add('animate__animated', 'animate__fadeIn');
+            } else {
+                // When leaving the viewport
+                entry.target.classList.add('animate__fadeOut');
+                entry.target.classList.remove('animate__fadeIn');
+            }
+        });
+    }, { threshold: threshold });
+
+    const img = document.querySelector('.fadein2');
+    observer.observe(img);
+});
