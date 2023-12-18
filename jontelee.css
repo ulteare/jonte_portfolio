@@ -59,3 +59,8 @@
 /* .scroll{
     cursor: grab;
 } */
+
+.scrollContainer {
+    cursor: grab;
+    scroll-behavior: smooth;
+}
