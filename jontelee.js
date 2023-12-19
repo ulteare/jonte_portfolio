@@ -296,3 +296,11 @@ slider.addEventListener('mousemove', (e) => {
 //     const walk = (x - startX); // Adjust the multiplier for sensitivity
 //     slider.scrollLeft = scrollLeft - walk;
 // });
+
+
+var exps = document.getElementsByClassName('experience');
+for (exp of exps){
+    if (window.innerWidth <= 450){
+        exp.innerText = "";
+    }
+}
