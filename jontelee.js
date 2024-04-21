@@ -196,6 +196,55 @@ document.addEventListener("DOMContentLoaded", function() {
     observer.observe(img);
 });
 
+
+// experience section fadein #4.1
+document.addEventListener("DOMContentLoaded", function() {
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // When the element is in the viewport
+                entry.target.classList.remove('invisible', 'animate__fadeOut');
+                entry.target.classList.add('animate__animated', 'animate__fadeInDown');
+            } else {
+                // When the element leaves the middle of the viewport
+                // entry.target.classList.add('animate__fadeOut');
+                // entry.target.classList.remove('animate__fadeInDown');
+            }
+        });
+    }, {
+        // Assuming the viewport height is consistent and the element should trigger at halfway down the viewport
+        rootMargin: '-10% 0px -10% 0px',
+        threshold: 0.8 // This needs to be greater than 0 to ensure the callback runs when intersecting
+    });
+
+    const img = document.querySelector('.experience4_bar');
+    observer.observe(img);
+});
+
+// experience section fadein #4.2
+document.addEventListener("DOMContentLoaded", function() {
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // When the element is in the viewport
+                entry.target.classList.remove('invisible', 'animate__fadeOut');
+                entry.target.classList.add('animate__animated', 'animate__fadeIn');
+            } else {
+                // When the element leaves the middle of the viewport
+                // entry.target.classList.add('animate__fadeOut');
+                // entry.target.classList.remove('animate__fadeIn');
+            }
+        });
+    }, {
+        // Assuming the viewport height is consistent and the element should trigger at halfway down the viewport
+        rootMargin: '-10% 0px -10% 0px',
+        threshold: 0.8 // This needs to be greater than 0 to ensure the callback runs when intersecting
+    });
+
+    const img = document.querySelector('.experience4_text');
+    observer.observe(img);
+});
+
 // change color when entering projects section
 document.addEventListener("DOMContentLoaded", function() {
     const observer = new IntersectionObserver((entries, observer) => {

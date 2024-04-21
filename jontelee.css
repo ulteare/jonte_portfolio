@@ -2,6 +2,10 @@
     background-color: rgba(3, 24, 25, 1);
 }
 
+.barcolor{
+    background-color: #98A6A1;
+}
+
 /* start: font-size for big ass text */
 .bigasstext {
     font-size: 70px;
@@ -30,7 +34,7 @@
     color: rgba(3, 24, 25, 1);
 }
 .experience_section{
-    height: 900px;
+    height: 1000px;
 }
 #projects{
     height: 110vh;
