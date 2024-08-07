@@ -100,6 +100,54 @@ document.addEventListener("DOMContentLoaded", function() {
     observer.observe(img);
 });
 
+// experience section fadein #5.1
+document.addEventListener("DOMContentLoaded", function() {
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // When the element is in the viewport
+                entry.target.classList.remove('invisible', 'animate__fadeOut');
+                entry.target.classList.add('animate__animated', 'animate__fadeInDown');
+            } else {
+                // When the element leaves the middle of the viewport
+                // entry.target.classList.add('animate__fadeOut');
+                // entry.target.classList.remove('animate__fadeInDown');
+            }
+        });
+    }, {
+        // Assuming the viewport height is consistent and the element should trigger at halfway down the viewport
+        rootMargin: '-30% 0px -30% 0px',
+        threshold: 0.01 // This needs to be greater than 0 to ensure the callback runs when intersecting
+    });
+
+    const img = document.querySelector('.experience5_bar');
+    observer.observe(img);
+});
+
+// experience section fadein #5.2
+document.addEventListener("DOMContentLoaded", function() {
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // When the element is in the viewport
+                entry.target.classList.remove('invisible', 'animate__fadeOut');
+                entry.target.classList.add('animate__animated', 'animate__fadeIn');
+            } else {
+                // When the element leaves the middle of the viewport
+                // entry.target.classList.add('animate__fadeOut');
+                // entry.target.classList.remove('animate__fadeIn');
+            }
+        });
+    }, {
+        // Assuming the viewport height is consistent and the element should trigger at halfway down the viewport
+        rootMargin: '-30% 0px -30% 0px',
+        threshold: 0.6 // This needs to be greater than 0 to ensure the callback runs when intersecting
+    });
+
+    const img = document.querySelector('.experience5_text');
+    observer.observe(img);
+});
+
 // experience section fadein #2.1
 document.addEventListener("DOMContentLoaded", function() {
     const observer = new IntersectionObserver((entries, observer) => {

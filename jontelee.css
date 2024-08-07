@@ -1,6 +1,9 @@
 .darkforest{
     background-color: rgba(3, 24, 25, 1);
 }
+.lowerop{
+    opacity: 0.3;
+}
 
 .barcolor{
     background-color: #98A6A1;
@@ -34,7 +37,7 @@
     color: rgba(3, 24, 25, 1);
 }
 .experience_section{
-    height: 1000px;
+    height: 1200px;
 }
 #projects{
     height: 110vh;
