@@ -164,8 +164,8 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }, {
         // Assuming the viewport height is consistent and the element should trigger at halfway down the viewport
-        rootMargin: '-30% 0px -30% 0px',
-        threshold: 0.01 // This needs to be greater than 0 to ensure the callback runs when intersecting
+        rootMargin: '-20% 0px -20% 0px',
+        threshold: 0.8 // This needs to be greater than 0 to ensure the callback runs when intersecting
     });
 
     const img = document.querySelector('.experience2_bar');
@@ -188,7 +188,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }, {
         // Assuming the viewport height is consistent and the element should trigger at halfway down the viewport
-        rootMargin: '-30% 0px -30% 0px',
+        rootMargin: '-20% 0px -20% 0px',
         threshold: 0.6 // This needs to be greater than 0 to ensure the callback runs when intersecting
     });
 
