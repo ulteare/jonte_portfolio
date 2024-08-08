@@ -14,6 +14,7 @@
     font-size: 70px;
 }
 
+
 /* Style for width between 1200px and 1280px */
 @media screen and (min-width: 1200px) and (max-width: 1279px) {
     .bigasstext {
