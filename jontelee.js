@@ -401,3 +401,34 @@ for (exp of exps){
         exp.innerText = "";
     }
 }
+
+// Custom cursor tracking
+document.addEventListener('DOMContentLoaded', function() {
+    // Check if device is mobile (no hover capability)
+    const isMobile = window.matchMedia("(hover: none) and (pointer: coarse)").matches;
+
+    // Don't create custom cursor on mobile devices
+    if (isMobile) return;
+
+    const cursor = document.createElement('div');
+    cursor.className = 'custom-cursor';
+    document.body.appendChild(cursor);
+
+    document.addEventListener('mousemove', (e) => {
+        cursor.style.left = e.clientX + 'px';
+        cursor.style.top = e.clientY + 'px';
+    });
+
+    // Detect hover over clickable elements
+    const clickables = document.querySelectorAll('a, button, .btn, [role="button"], input[type="submit"], input[type="button"]');
+
+    clickables.forEach(element => {
+        element.addEventListener('mouseenter', () => {
+            cursor.classList.add('cursor-hover');
+        });
+
+        element.addEventListener('mouseleave', () => {
+            cursor.classList.remove('cursor-hover');
+        });
+    });
+});
