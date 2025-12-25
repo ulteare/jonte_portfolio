@@ -26,6 +26,21 @@ body, html {
     background: rgba(220, 220, 220, 0.8);
 }
 
+/* Hide custom cursor on mobile and restore default cursor */
+@media (hover: none) and (pointer: coarse) {
+    *, *::before, *::after {
+        cursor: auto !important;
+    }
+
+    body, html {
+        cursor: auto !important;
+    }
+
+    .custom-cursor {
+        display: none !important;
+    }
+}
+
 .darkforest{
     background-color: rgba(3, 24, 25, 1);
 }

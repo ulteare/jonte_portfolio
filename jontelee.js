@@ -404,6 +404,12 @@ for (exp of exps){
 
 // Custom cursor tracking
 document.addEventListener('DOMContentLoaded', function() {
+    // Check if device is mobile (no hover capability)
+    const isMobile = window.matchMedia("(hover: none) and (pointer: coarse)").matches;
+
+    // Don't create custom cursor on mobile devices
+    if (isMobile) return;
+
     const cursor = document.createElement('div');
     cursor.className = 'custom-cursor';
     document.body.appendChild(cursor);
