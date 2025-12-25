@@ -414,25 +414,10 @@ document.addEventListener('DOMContentLoaded', function() {
     cursor.className = 'custom-cursor';
     document.body.appendChild(cursor);
 
-    let mouseX = 0;
-    let mouseY = 0;
-    let cursorX = 0;
-    let cursorY = 0;
-
     document.addEventListener('mousemove', (e) => {
-        mouseX = e.clientX;
-        mouseY = e.clientY;
+        cursor.style.left = e.clientX + 'px';
+        cursor.style.top = e.clientY + 'px';
     });
-
-    function animate() {
-        const speed = 0.2;
-        cursorX += (mouseX - cursorX) * speed;
-        cursorY += (mouseY - cursorY) * speed;
-        cursor.style.left = cursorX + 'px';
-        cursor.style.top = cursorY + 'px';
-        requestAnimationFrame(animate);
-    }
-    animate();
 
     // Detect hover over clickable elements
     const clickables = document.querySelectorAll('a, button, .btn, [role="button"], input[type="submit"], input[type="button"]');
