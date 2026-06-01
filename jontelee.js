@@ -402,3 +402,25 @@ for (exp of exps){
     }
 }
 
+// projects section fadein/fadeout
+document.addEventListener("DOMContentLoaded", function() {
+    const threshold = window.innerWidth > 400 ? 0.3 : 0.08;
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // When entering the viewport
+                entry.target.classList.remove('invisible', 'animate__fadeOut');
+                entry.target.classList.add('animate__animated', 'animate__fadeIn');
+            } else {
+                // When leaving the viewport
+                entry.target.classList.add('animate__fadeOut');
+                entry.target.classList.remove('animate__fadeIn');
+            }
+        });
+    }, { threshold: threshold });
+
+    const projectsGallery = document.querySelector('.fadein-projects');
+    observer.observe(projectsGallery);
+});
+
